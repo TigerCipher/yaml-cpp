@@ -27,10 +27,16 @@ project "yaml-cpp"
     filter "system:linux"
         pic "On"
 
-    filter "configuration:Debug"
-        runtime "Debug"
-        symbols "On"
-    
-    filter "configurations:Release"
-        rumtime "Release"
-        optimize "On"
+	filter "configurations:Debug"
+		symbols "On"
+		runtime "Debug"
+
+	filter "configurations:Release"
+		defines "RB_RELEASE"
+		optimize "On"
+		runtime "Release"
+
+	filter "configurations:Dist"
+		defines "RB_DIST"
+		runtime "Release"
+		optimize "On"
