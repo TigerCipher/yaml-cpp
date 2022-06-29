@@ -20,6 +20,11 @@ project "yaml-cpp"
         "include"
     }
 
+    defines
+    {
+        "YAML_CPP_STATIC_DEFINE"
+    }
+
     cppdialect "C++17"
     staticruntime "On"
     systemversion "latest"
