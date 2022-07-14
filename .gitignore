@@ -1,3 +1,11 @@
 build/
 /tags
 /bazel-*
+
+
+# Rebirth
+
+bin/
+obj/
+*.vcxproj
+*.vcxproj.*

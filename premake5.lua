@@ -26,7 +26,7 @@ project "yaml-cpp"
     }
 
     cppdialect "C++17"
-    staticruntime "On"
+    staticruntime "off"
     systemversion "latest"
 
     filter "system:linux"
